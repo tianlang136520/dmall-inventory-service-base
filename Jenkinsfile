@@ -1,5 +1,9 @@
 pipeline {
     agent any
+
+    tiggers {
+        pollSCM('* * * * *');
+    }
     
     stages {
         stage('Build') {
