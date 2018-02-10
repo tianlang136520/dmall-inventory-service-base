@@ -20,7 +20,7 @@ pipeline {
 
         stage('Docker image') {
             steps{
-                sh './genImage.sh'
+                sh './genImages.sh'
             }
         }
 
